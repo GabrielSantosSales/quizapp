@@ -1,6 +1,6 @@
-import { verificarTema, trocarTema } from "../../helpers/tema-helper.js";
+import { verificarTema, trocarTema } from "../../helpers/tema-helper.js"
 
-const botaoTema = document.querySelector(".tema button")
+const botaoTema = document.querySelector (".tema button")
 const body = document.querySelector("body")
 const assunto = localStorage.getItem("assunto")
 const botaoJogarNovamente = document.querySelector("main button")
@@ -33,7 +33,9 @@ function inserirResultado() {
 
     sectionPontuacao.innerHTML = `
      ${divAssunto.outerHTML}
+
     <strong>${pontos}</strong>
+
     <p>de 10</p>
     `
 }

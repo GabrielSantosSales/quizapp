@@ -14,13 +14,13 @@
     --purple-hover: rgba(167, 41, 245, 0.6);
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
-    --pontuacao-bg: #ffff;
+    --pontuacao-bg: #fff;
     --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
-    --bg-javascript: #ebf0ff;
+    --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
-    --white: #ffff;
+    --white: #fff;
     --green: #26d782;
     --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
@@ -32,24 +32,23 @@ body.escuro {
     --color-span: #313e51;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg);
-    --primary-text-color: #ffff;
+    --primary-text-color: #fff;
     --secondary-text-color: #abc1e1;
     --pontuacao-bg: #3b4d66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 }
 
 body {
-    height: 100svh;  
+    height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
-     background-repeat: no-repeat;
-     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
-
 }
 
 .assunto {
@@ -101,13 +100,12 @@ header {
 
 .tema img {
     width: 16px;
-
 }
 
 .tema button {
     height: 20px;
     width: 32px;
-    background-color: var(--purple);
+    background: var(--purple);
     border: 0;
     border-radius: 999px;
     padding: 4px;
@@ -126,7 +124,7 @@ main {
     padding: 32px 24px;
 }
 
-main h2{
+main h2 {
     font-size: 40px;
     font-weight: 300;
     color: var(--primary-text-color);
@@ -134,7 +132,7 @@ main h2{
 }
 
 main h2 strong {
-    font-weight: 500;
+    font-weight: 500
 }
 
 .pontuacao {
@@ -160,33 +158,33 @@ main h2 strong {
     font-size: 18px;
 }
 
-main button{
+main button {
     padding: 16px;
     border-radius: 12px;
     border: none;
     background: var(--purple);
     color: var(--white);
     width: 100%;
-
+    
     font-size: 18px;
     font-weight: 500;
-    transition: background 0,3s;
+    transition: background 0.3s;
     box-shadow: var(--shadow);
 }
 
-main button:hover{
+main button:hover {
     background: var(--purple-hover);
     cursor: pointer;
 }
 
 @media(min-width: 1100px) {
-    body{
+    body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    header{
+    header {
         margin-block: 81px;
         max-width: 1160px;
         margin-inline: auto;
@@ -235,7 +233,7 @@ main button:hover{
     main h2 {
         font-size: 64px;
     }
-    
+
     .pontuacao {
         border-radius: 24px;
         margin-bottom: 32px;

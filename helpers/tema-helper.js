@@ -8,11 +8,11 @@ export function trocarTema(body, botaoTema) {
     if (tema === "claro") {
         body.classList.add("escuro")
         localStorage.setItem("tema", "escuro")
-        botaoTema.style.justifyContent = "flex-end"
+        botaoTema.style.justifyContent = "Flex-end"
     } else {
         body.classList.remove("escuro")
         localStorage.setItem("tema", "claro")
-        botaoTema.style.justifyContent = "flex-start"
+        botaoTema.style.justifyContent = "Flex-start"
     }
 }
 
@@ -23,6 +23,6 @@ export function verificarTema(body, botaoTema) {
 
     if (tema === "escuro") {
         body.classList.add("escuro")
-        botaoTema.style.justifyContent = "flex-end"
+        botaoTema.style.justifyContent = "Flex-end"
     }
 }

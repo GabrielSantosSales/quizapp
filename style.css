@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,18 +6,18 @@
     -webkit-font-smoothing: antialiased;
 }
 
-:root{
-    --bg-color:#f4f6fa;
+:root {
+    --bg-color: #f4f6fa;
     --purple: #a729f5;
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
-    --button-bg: #ffff;
+    --button-bg: #fff;
     --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
-    --bg-javascript: #ebf0ff;
+    --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
-    --white: #ffff;
+    --white: #fff;
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
 }
@@ -26,7 +26,7 @@ body.escuro {
     --bg-color: #313e51;
     --bg-mobile: url(./assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-dark.svg);
-    --primary-text-color: #ffff;
+    --primary-text-color: #fff;
     --secondary-text-color: #abc1e1;
     --button-bg: #3b4d66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
@@ -39,27 +39,29 @@ body {
     background-size: cover;
 }
 
-header{
+header {
     padding: 16px 24px;
     display: flex;
     justify-content: flex-end;
+    max-width: 1160px;
+    margin-inline: auto;
 }
 
-.tema{
+.tema {
     padding: 8px 0;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.tema img{
+.tema img {
     width: 16px;
 }
 
 .tema button {
     height: 20px;
     width: 32px;
-    background-color: var(--purple);
+    background: var(--purple);
     border: 0;
     border-radius: 999px;
     padding: 4px;
@@ -74,7 +76,7 @@ header{
     border-radius: 999px;
 }
 
-main { 
+main {
     padding: 32px 24px;
 }
 
@@ -82,7 +84,7 @@ main {
     margin-bottom: 40px;
 }
 
-.boas_vindas {
+.boas_vindas h1 {
     font-size: 40px;
     font-weight: 300;
     color: var(--primary-text-color);
@@ -101,6 +103,7 @@ main {
 }
 
 .assuntos {
+
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -132,7 +135,7 @@ main {
     width: 100%;
 }
 
-.botao_html div {
+.botao_html div  {
     background: var(--bg-html);
 }
 
@@ -141,7 +144,7 @@ main {
 }
 
 .botao_javascript div {
-    background: var(--bg-javascript);
+    background: var(--bg-js);
 }
 
 .botao_acessibilidade div {
@@ -211,11 +214,4 @@ main {
         height: 56px;
         padding: 8px;
     }
-
-
-
-
-
-
-
 }

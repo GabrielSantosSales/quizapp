@@ -8,19 +8,19 @@
 
 :root {
     --bg-color: #f4f6fa;
-    --purple: #a729f5;
     --bg-span: #f4f6fa;
     --color-span: #626c7f;
+    --purple: #a729f5;
     --purple-hover: rgba(167, 41, 245, 0.6);
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
-    --button-bg: #ffff;
+    --button-bg: #fff;
     --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
-    --bg-javascript: #ebf0ff;
+    --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
-    --white: #ffff;
+    --white: #fff;
     --green: #26d782;
     --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
@@ -32,25 +32,23 @@ body.escuro {
     --color-span: #313e51;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg);
-    --primary-text-color: #ffff;
+    --primary-text-color: #fff;
     --secondary-text-color: #abc1e1;
     --button-bg: #3b4d66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 }
 
 body {
-    height: 100svh;  
+    height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
-     background-repeat: no-repeat;
-     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-    padding: 16px 24px;
     display: flex;
-    justify-content: space-flex-end;
-    max-width: 1160px;
-    margin-inline: auto;
+    justify-content: space-between;
+    padding: 16px 24px;
 }
 
 .assunto {
@@ -60,29 +58,11 @@ header {
 }
 
 .assunto_icone {
+    background: var(--bg-acessibilidade);
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
-}
-
-.assunto_icone.html{
-    background: var(--bg-html);
-
-}
-
-
-.assunto_icone.css{
-    background: var(--bg-css);
-}
-
-
-.assunto_icone.javascript{
-    background: var(--bg-javascript);
-}
-
-.assunto_icone.acessibilidade{
-    background: var(--bg-acessibilidade);
 }
 
 .assunto_icone img {
@@ -104,13 +84,12 @@ header {
 
 .tema img {
     width: 16px;
-
 }
 
 .tema button {
     height: 20px;
     width: 32px;
-    background-color: var(--purple);
+    background: var(--purple);
     border: 0;
     border-radius: 999px;
     padding: 4px;
@@ -170,8 +149,8 @@ main {
 
 .alternativas label {
     display: block;
-    padding: 12px;
     background: var(--button-bg);
+    padding: 12px;
     font-size: 18px;
     font-weight: 500;
     border-radius: 12px;
@@ -201,7 +180,7 @@ main {
 
     & span {
         background: var(--green);
-        color: var(--white);
+        color: white;
     }
 }
 
@@ -214,7 +193,7 @@ main {
     }
 }
 
-.alternativas input{
+.alternativas input {
     display: none;
 }
 
@@ -225,12 +204,12 @@ main {
 }
 
 .alternativas div span {
+    color: var(--color-span);
     display: block;
     width: 40px;
     height: 40px;
     background: var(--bg-span);
     border-radius: 5px;
-    color: var(--color-span);
 
     display: flex;
     align-items: center;
@@ -248,7 +227,7 @@ main {
 
     font-size: 18px;
     font-weight: 500;
-    transition: background 0.7s;
+    transition: background 0.3s;
 }
 
 .alternativas button:hover {
@@ -257,13 +236,13 @@ main {
 }
 
 @media(min-width: 1100px) {
-    body{
+    body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    header{
+    header {
         margin-block: 81px;
         max-width: 1160px;
         margin-inline: auto;
@@ -273,6 +252,22 @@ main {
         width: 56px;
         height: 56px;
         padding: 8px;
+    }
+
+    .assunto_icone.html {
+        background: var(--bg-html);
+    }
+
+    .assunto_icone.css {
+        background: var(--bg-css);
+    }
+
+    .assunto_icone.javascript {
+        background: var(--bg-js);
+    }
+
+    .assunto_icone.acessibilidade {
+        background: var(--bg-acessibilidade);
     }
 
     .assunto h1 {
@@ -300,7 +295,7 @@ main {
     main {
         max-width: 1160px;
         margin-inline: auto;
-
+        
         display: flex;
         gap: 130px;
     }
@@ -318,6 +313,7 @@ main {
     .pergunta p {
         font-size: 20px;
         line-height: 30px;
+
         margin-bottom: 27px;
     }
 
@@ -345,7 +341,6 @@ main {
         width: 56px;
         height: 56px;
         font-size: 28px;
-
     }
 
     .alternativas button {
